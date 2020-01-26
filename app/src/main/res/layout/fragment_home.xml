@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_weight="0.35">
+
+    </com.daimajia.slider.library.SliderLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="SHOP BY CATEGORY"
+        android:textSize="20dp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fruitcard"
+            android:layout_width="160dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true">
+            <ImageView
+                android:id="@+id/sari"
+                android:layout_width="190dp"
+                android:layout_height="170dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/onlyfrut1" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="200dp"
+                android:fontFamily="@font/biorhyme_bold"
+                android:text="FRUITS"
+                android:textSize="20dp"
+                android:layout_marginBottom="0dp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/vegcardview"
+            android:layout_width="160dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true">
+            <ImageView
+                android:layout_width="190dp"
+                android:layout_height="170dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/onlyveg" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="200dp"
+                android:fontFamily="@font/biorhyme_bold"
+                android:text="VEGETABLES"
+                android:layout_marginEnd="5dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/offer4"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

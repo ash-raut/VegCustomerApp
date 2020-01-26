@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddNewAddressActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="ORDER DETAILS"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:background="@color/light_green"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="25dp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:gravity="center"
+        android:text="Please Write Your Shipment Details"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:background="@color/black"
+                android:layout_width="350dp"
+                android:layout_height="700dp"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text=" NAME :"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+                    <EditText
+                        android:id="@+id/etname"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:hint="Enter Your  Name"
+                        android:inputType="textPersonName"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="MOBILENO:"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:layout_marginTop="50dp"
+                        android:textStyle="bold"/>
+                    <EditText
+                        android:id="@+id/etmobile_no"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="50dp"
+                        android:hint="Enter Your Mobile No"
+                        android:inputType="textPersonName"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="ADDRESS :"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:layout_marginTop="105dp"
+                        android:textStyle="bold"/>
+                    <EditText
+                        android:id="@+id/etaddress"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:hint="Enter Your Address"
+                        android:layout_marginTop="105dp"
+                        android:inputType="textPersonName"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="98dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="155dp"
+                        android:text="CITY :"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:id="@+id/etcity"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:hint="Enter Your City"
+                        android:layout_marginTop="155dp"
+                        android:inputType="textPersonName"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:text="STATE :"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:layout_marginTop="210dp"
+                        android:textStyle="bold"/>
+                    <EditText
+                        android:id="@+id/etstate"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:hint="Enter Your State"
+                        android:layout_marginTop="210dp"
+                        android:inputType="textPersonName"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text=" Country :"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"
+                        android:textSize="20dp"
+                        android:layout_marginTop="310dp"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+                    <EditText
+                        android:id="@+id/etcountry"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="310dp"
+                        android:hint="Enter Your  Country"
+                        android:inputType="textPersonName"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text=" Landmark :"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"
+                        android:textSize="20dp"
+                        android:layout_marginTop="340dp"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+                    <EditText
+                        android:id="@+id/etlandmark"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="340dp"
+                        android:hint="Enter Your  Landmark"
+                        android:inputType="textPersonName"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="PINCODE :"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:layout_marginTop="260dp"
+                        android:textStyle="bold"/>
+                    <EditText
+                        android:id="@+id/etpincode"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:hint="Enter Your Pincode No"
+                        android:layout_marginTop="260dp"
+                        android:inputType="textPersonName"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/placeorder"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="240dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_button"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:text="SUBMIT"
+                    android:textColor="@color/tomato"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

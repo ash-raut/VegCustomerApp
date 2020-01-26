@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".CustomerRegistrationActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="154dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/krish" />
+
+    <EditText
+
+        android:id="@+id/etFullName"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:hint="Enter Full Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="#FDFCFD" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:hint="Enter User Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="#FDFCFD" />
+
+    <EditText
+        android:id="@+id/etmobileNo"
+        android:layout_width="256dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textColorHint="#FDFCFD"
+        android:hint="Enter Mobile Number"
+        android:maxLength="10"
+        android:textColor="@color/white"
+        android:inputType="number"
+        android:padding="10dp" />
+
+
+    <EditText
+        android:id="@+id/emailadd"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email_Address"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textColorHint="#FDFCFD" />
+
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="#FDFCFD" />
+
+
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Confirm Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textColorHint="#FDFCFD" />
+
+    <EditText
+        android:id="@+id/DOB"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:hint="YYYY/MM/DD"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textColorHint="#FDFCFD"
+        android:drawableEnd="@drawable/ic_date_range_black_24dp"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+    <LinearLayout
+        android:layout_width="256dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="4dp"
+            android:gravity="center"
+            android:text="gender"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGrp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioM"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Male"
+                android:textColor="@android:color/white"
+                android:textSize="14dp" />
+
+            <RadioButton
+                android:id="@+id/radioF"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="Female"
+                android:textColor="@android:color/white"
+                android:textSize="14dp" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Address"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textColorHint="#FDFCFD" />
+
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/almendra_sc"
+        android:text="SIGN UP"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/tomato" />
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="already_having_account"/>
+
+    <Button
+        android:id="@+id/alreadyreglogin"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/almendra_sc"
+        android:text="LOG IN"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/tomato" />
+
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="Developed by eSparse Matrix Solution Pvt Ltd"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:textStyle="italic|bold" />
+
+
+
+</LinearLayout>
